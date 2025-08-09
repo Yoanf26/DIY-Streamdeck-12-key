@@ -97,7 +97,7 @@ void setup() {
   // Set WS22812b LED configuration for application color based on keystrokes
 
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
-  FastLED.setBrightness(50);
+  FastLED.setBrightness(40);
   leds[0].setRGB( 0, 174, 66);
   leds[1].setRGB( 247, 112, 1);
   leds[2].setRGB( 49, 168, 255);
