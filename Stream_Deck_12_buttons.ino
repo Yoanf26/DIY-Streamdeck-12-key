@@ -89,27 +89,26 @@ const uint8_t ledPin = 17;
   //     Key1     Key2     Key3     Key4
   //  -  Led0  -  Led1  -  Led2  -  Led3  -
   //     Key5     Key6     Key7     Key8  |
-  //  -  Led4  -  Led5  -  Led6  -  Led7  -
+  //  -  Led7  -  Led6  -  Led5  -  Led4  -
   //  |  Key9     Key10    Key11    Key12
   //  -  Led8  -  Led9  -  Led10 -  Led11
 
 void setup() { 
   // Set WS22812b LED configuration for application color based on keystrokes
-
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
   FastLED.setBrightness(40);
-  leds[0].setRGB( 0, 174, 66);
-  leds[1].setRGB( 247, 112, 1);
-  leds[2].setRGB( 49, 168, 255);
-  leds[3].setRGB( 0, 153, 203);
-  leds[4].setRGB( 255, 0, 0);
-  leds[5].setRGB( 0, 151, 157);
-  leds[6].setRGB( 52, 168, 83);
-  leds[7].setRGB( 33, 165, 242);
-  leds[8].setRGB( 15, 212, 246);
-  leds[9].setRGB( 76, 111, 146);
-  leds[10].setRGB( 181, 169, 116);
-  leds[11].setRGB( 0, 57, 203);
+  leds[0].setRGB( 0, 174, 66); //Bambu Studio
+  leds[1].setRGB( 247, 112, 1); //Fusion 360
+  leds[2].setRGB( 49, 168, 255); //Photoshop
+  leds[3].setRGB( 0, 153, 203); //Volume Up
+  leds[4].setRGB( 255, 0, 0); //Volume Mute
+  leds[5].setRGB( 0, 151, 157); //Arduino IDE
+  leds[6].setRGB( 52, 168, 83); //Android Studio
+  leds[7].setRGB( 33, 165, 242); //VS Code
+  leds[8].setRGB( 15, 212, 246); //Uniget UI
+  leds[9].setRGB( 76, 111, 146); //MQTT Explorer
+  leds[10].setRGB( 181, 169, 116); //MobaXterm
+  leds[11].setRGB( 0, 57, 203); //Volume Minus
   FastLED.show();
 
   // Safety check. Ground pin #1 (RX) to cancel keyboard inputs.
