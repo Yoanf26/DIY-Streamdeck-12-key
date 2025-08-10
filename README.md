@@ -41,3 +41,5 @@ Tutorial:
 16. If you want to change the color of an LED, this is located at the beginning of the "void setup" section with the RGB codes. Do not exceed the setBrightness parameter to 60, otherwise there is a risk of over-consumption of too much power on the USB port.
 17. Upload and enjoy.
 
+The code provides the keys F13 to F24. You can use them in your software that supports these keys, or you can use a Key Remapper. Personally, I use the PowerToys keymap, which I remap the volume keys directly into. Otherwise, I remap them to the CTRL + SHIFT + ALT + (Letter) key combination.
+So, to launch an application, I go to the application's properties to enter this same key combination. For example, for Bambu Studio, I use the CTRL + SHIFT + ALT + B key combination. And I remapped the F13 key to CTRL + SHIFT + ALT + B.
